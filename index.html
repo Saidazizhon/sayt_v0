@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!--
+// v0 by Vercel.
+// https://v0.dev/t/fzLfYfXpxQU
+-->
+
+<div class="bg-gray-100">
+  <header class="bg-black text-white">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center space-x-4">
+        <h1 class="text-xl font-bold">Exclusive</h1>
+        <nav class="hidden md:flex space-x-4">
+          <a class="hover:text-gray-400" href="#">
+            Home
+          </a>
+          <a class="hover:text-gray-400" href="#">
+            Contact
+          </a>
+          <a class="hover:text-gray-400" href="#">
+            Shop
+          </a>
+          <a class="hover:text-gray-400" href="#">
+            About
+          </a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-4">
+        <input
+          class="h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 hidden md:block"
+          placeholder="Search products..."
+          type="search"
+        />
+        <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-6 h-6"
+          >
+            <circle cx="8" cy="21" r="1"></circle>
+            <circle cx="19" cy="21" r="1"></circle>
+            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+          </svg>
+        </button>
+        <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-6 h-6"
+          >
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="container mx-auto py-8 px-6">
+    <section class="mb-8">
+      <div class="relative">
+        <img
+          src="./hero_endframe__cvklg0xk3w6e_large 2.svg"
+          alt="Banner"
+          class="w-full h-auto"
+          width="500"
+          height="350"
+          style="aspect-ratio: 1200 / 400; object-fit: cover;"
+        />
+        <div class="absolute top-0 left-0 p-4">
+          <h2 class="text-4xl font-bold text-white">Up to 10% off Voucher</h2>
+          <p class="text-white">Shop Now</p>
+        </div>
+      </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Browse By Category</h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+          Laptop
+        </button>
+        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+          Smartphone
+        </button>
+        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+          Camera
+        </button>
+        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+          Headphones
+        </button>
+        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full">
+          Gaming
+        </button>
+      </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Featured</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+          <img
+            src="/placeholder.svg"
+            alt="Product"
+            class="w-full h-auto"
+            width="200"
+            height="200"
+            style="aspect-ratio: 200 / 200; object-fit: cover;"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold">Product Name</h3>
+            <p class="text-sm text-muted-foreground">$99.99</p>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+          <img
+            src="/placeholder.svg"
+            alt="Product"
+            class="w-full h-auto"
+            width="200"
+            height="200"
+            style="aspect-ratio: 200 / 200; object-fit: cover;"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold">Product Name</h3>
+            <p class="text-sm text-muted-foreground">$99.99</p>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+          <img
+            src="/placeholder.svg"
+            alt="Product"
+            class="w-full h-auto"
+            width="200"
+            height="200"
+            style="aspect-ratio: 200 / 200; object-fit: cover;"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold">Product Name</h3>
+            <p class="text-sm text-muted-foreground">$99.99</p>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+          <img
+            src="/placeholder.svg"
+            alt="Product"
+            class="w-full h-auto"
+            width="200"
+            height="200"
+            style="aspect-ratio: 200 / 200; object-fit: cover;"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold">Product Name</h3>
+            <p class="text-sm text-muted-foreground">$99.99</p>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mb-8">
+      <div class="relative">
+        <img
+          src="/placeholder.svg"
+          alt="Banner"
+          class="w-full h-auto"
+          width="1200"
+          height="400"
+          style="aspect-ratio: 1200 / 400; object-fit: cover;"
+        />
+        <div class="absolute top-0 left-0 p-4">
+          <h2 class="text-4xl font-bold text-white">Enhance Your Music Experience</h2>
+          <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">New Arrival</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+          <img
+            src="/placeholder.svg"
+            alt="Product"
+            class="w-full h-auto"
+            width="200"
+            height="200"
+            style="aspect-ratio: 200 / 200; object-fit: cover;"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold">Product Name</h3>
+            <p class="text-sm text-muted-foreground">$99.99</p>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+          <img
+            src="/placeholder.svg"
+            alt="Product"
+            class="w-full h-auto"
+            width="200"
+            height="200"
+            style="aspect-ratio: 200 / 200; object-fit: cover;"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold">Product Name</h3>
+            <p class="text-sm text-muted-foreground">$99.99</p>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+          <img
+            src="/placeholder.svg"
+            alt="Product"
+            class="w-full h-auto"
+            width="200"
+            height="200"
+            style="aspect-ratio: 200 / 200; object-fit: cover;"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold">Product Name</h3>
+            <p class="text-sm text-muted-foreground">$99.99</p>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+          <img
+            src="/placeholder.svg"
+            alt="Product"
+            class="w-full h-auto"
+            width="200"
+            height="200"
+            style="aspect-ratio: 200 / 200; object-fit: cover;"
+          />
+          <div class="p-6">
+            <h3 class="text-lg font-bold">Product Name</h3>
+            <p class="text-sm text-muted-foreground">$99.99</p>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-2">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-12 h-12 mx-auto mb-2"
+          >
+            <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
+            <path d="M15 18H9"></path>
+            <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
+            <circle cx="17" cy="18" r="2"></circle>
+            <circle cx="7" cy="18" r="2"></circle>
+          </svg>
+          <h3 class="text-lg font-bold">Free &amp; Fast Delivery</h3>
+          <p class="text-sm text-muted-foreground">On orders over $50</p>
+        </div>
+        <div class="text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-12 h-12 mx-auto mb-2"
+          >
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+          </svg>
+          <h3 class="text-lg font-bold">24/7 Customer Service</h3>
+          <p class="text-sm text-muted-foreground">Call us anytime</p>
+        </div>
+        <div class="text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-12 h-12 mx-auto mb-2"
+          >
+            <line x1="12" x2="12" y1="2" y2="22"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <h3 class="text-lg font-bold">Money Back Guarantee</h3>
+          <p class="text-sm text-muted-foreground">30 days money back</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-black text-white py-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-lg font-bold mb-4">Exclusive</h3>
+        <p class="text-sm text-muted-foreground">© 2023 Exclusive. All rights reserved.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Support</h3>
+        <ul class="space-y-2">
+          <li>
+            <a class="hover:text-gray-400" href="#">
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-400" href="#">
+              FAQs
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-400" href="#">
+              Shipping &amp; Returns
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Account</h3>
+        <ul class="space-y-2">
+          <li>
+            <a class="hover:text-gray-400" href="#">
+              Sign In
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-400" href="#">
+              Register
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-400" href="#">
+              Order Status
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li>
+            <a class="hover:text-gray-400" href="#">
+              New Arrivals
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-400" href="#">
+              Best Sellers
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
